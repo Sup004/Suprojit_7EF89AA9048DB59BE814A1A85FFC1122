@@ -1,11 +1,12 @@
-class Player:
-    def play(self):
-        print("The player is playing cricket.")
-class Batsman(Player):
-    def play(self):
-        print("The batsman is batting.")
-class Bowler(Player):
-    def play(self):
-        print("The bowler is bowling.")
-batsman = Batsman()
-bowler = Bowler()
+#Recursive function-factorial
+
+def fact_rec (n):
+  if n==0 or n==1:
+    return 1
+  else:
+    return n*fact_rec(n-1)
+
+number=6
+res=fact_rec(number)
+
+print("The factorial of {} is {}".format(number,res))
